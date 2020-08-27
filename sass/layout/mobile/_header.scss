@@ -1,0 +1,42 @@
+// inheriting border-box
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+// body
+body {
+    background-color: $secondary-page-color;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+// standart margin remover
+h1, h2, h3, h4, h5, h6, ul, p {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+// list style remover
+ul {
+    list-style: none;
+}
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    // header
+    .header-conteiner {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto 0 auto;
+        max-width: 480px;
+        height: auto;
+        padding: 10px 15px;
+        border-bottom: 1px solid #ECECEC;
+    }
+    .header-conteiner.portfolio-page {
+        margin-bottom: 60px;
+    }
+
+}

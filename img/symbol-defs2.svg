@@ -18,5 +18,11 @@
         <symbol id="check-mark" viewBox="0 0 32 32">
             <path fill="var(--color1, #fff)" stroke="var(--color1, #fff)" stroke-width=".492" d="M4.817 15.39l-.17-.162-.17.16-2.373 2.25.187.18 8.775 8.369.17-.162L29.894 8.226l-.187-.177-2.341-2.233-.17.162-16.13 15.375-6.25-5.962z"/>
         </symbol>
+        <symbol id="menu-24px" viewBox="0 0 24 16">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z" fill="#000"/>
+        </symbol>
+        <symbol id="menu-close-24px" viewBox="0 0 20 20">
+            <path d="M18.667 1.88L16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z" fill="#212121"/>
+        </symbol>
     </defs>
 </svg>

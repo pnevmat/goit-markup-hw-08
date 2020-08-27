@@ -1,0 +1,21 @@
+.logo {
+    display: block;
+    margin-right: calc(100% - 204px);
+    color: $primary-page-color;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo .header-logo {
+    color: $primary-text-color;
+}
+.logo.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-logo .logo {
+    color: $secondary-page-color;
+}

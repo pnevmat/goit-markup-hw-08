@@ -1,0 +1,33 @@
+// features card
+.ul .items:not(:last-child) {
+    margin-bottom: 30px;
+}
+.features-items {
+    display: flex;
+    max-width: 450px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    background-color: #F5F4FA;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+
+    fill: #AFB1B8;
+}
+.features {
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+.features-text {
+    text-align: left;
+    color: #757575;
+    font-weight: 400;
+    line-height: 1.71;
+}

@@ -1,10 +1,10 @@
 (() => {
     const menuBtnRef = document.querySelector('[mobile-menu-button]');
-    const mobileMenuRef = document.querySelector('[menu-modal]');
+    const mobileMenuRef = document.querySelector('[modal-menu]');
     
     menuBtnRef.addEventListener('click', () => {
         const expanded =
-            menuBtnRef.getAttribute('aria-expanded') == true || falce;
+            menuBtnRef.getAttribute('aria-expanded') == true || false;
         
         menuBtnRef.classList.toggle('is-open');
         menuBtnRef.setAttribute('aria-expanded', !expanded);

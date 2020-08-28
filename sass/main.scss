@@ -1,4 +1,9 @@
 @import "./utils/variables";
 @import "./layout/mobile/header";
-@import "./components/logo";
+@import "./components/mobile/logo";
+@import "./components/mobile/buttons";
 @import "./components/mobile/menu";
+@import "./layout/mobile/hero";
+@import "./layout/mobile/features";
+@import "./components/mobile/features-card";
+@import "./layout/mobile/what-we-do";

@@ -1,0 +1,20 @@
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    .address {
+        margin-bottom: 60px;
+
+        text-align: center;
+    }
+}
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address-link:hover, .address-link:focus {
+    color: $primary-page-color;
+}

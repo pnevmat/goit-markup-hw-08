@@ -1,0 +1,55 @@
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    .ul.subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & :not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .footer-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .footer-label {
+        display: block;
+        text-align: center;
+    
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .footer-input {
+        width: 100%;
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: #2F303A;
+        cursor: pointer;
+    
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus {
+            outline: none;
+            border-color: $primary-page-color;
+        }
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    .subscribe .icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 10px;
+    }
+}

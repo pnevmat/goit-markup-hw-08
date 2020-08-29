@@ -1,0 +1,23 @@
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    // regular-customers section
+    .customers-section {
+        color: #212121;
+        font-weight: 700;
+        line-height: 1.14;
+    }
+    .customers-conteiner {
+        max-width: 480px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto 60px auto;
+    }
+    .customers-header {
+        margin-bottom: 30px;
+
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: none;
+    }
+}

@@ -57,7 +57,7 @@
         margin-bottom: 60px;
     }
     .nav, .nav-link {
-        color: #757575;
+        color: $primary-text-color;
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -68,6 +68,7 @@
     .nav-link.contact {
         display: flex;
         align-items: center;
+        color: #757575;
     }
     .item {
         position: relative;

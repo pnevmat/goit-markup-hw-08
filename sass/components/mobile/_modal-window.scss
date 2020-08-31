@@ -7,6 +7,7 @@
         width: 100%;
         height: 100%;
         background-color: rgba(255, 165, 0, 0);
+        overflow-y: scroll;
         opacity: 1;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -19,11 +20,16 @@
     }
     .modal {
         position: absolute;
-        top: 50%;
+        @media screen and (max-width: 337px) {
+            top: calc(80% + 93px);
+        }
+        @media screen and (min-width: 338px) and (max-width: 480px) {
+            top: calc(60% + 93px);
+        }
         left: 50%;
 
         width: calc(100% - 30px);
-        height: 581px;
+        height: auto;
         padding: 40px 40px;
         border-radius: 4px;
         background-color: #FFFFFF;
@@ -35,7 +41,7 @@
     .modal-button {
         position: absolute;
         top: 8px;
-        left: 490px;
+        left: calc(100% - 38px);
 
         display: flex;
         width: 30px;
@@ -96,8 +102,8 @@
     }
     .modal-content .icon {
         position: absolute;
-        top: 64px;
-        left: 12px;
+        top: 0;
+        left: 0;
         width: 18px;
         height: 18px;
         fill: #212121;
@@ -107,11 +113,11 @@
     .email {
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .icon.phone {
-        top: calc(64px + 68px);
-    }
+    .icon.name,
+    .icon.phone,
     .icon.email {
-        top: calc(64px + 68px * 2);
+        top: calc(100% - 39px);
+        left: 12px;
     }
     .modal-iput:focus,
     .modal-iput:focus + .name,
@@ -143,15 +149,29 @@
         border-color: $primary-page-color;
     }
     .modal-checkbox {
+        position: relative;
+        @media screen and (max-width: 303px) {
+            top: -68px;
+        }
+        @media screen and (min-width: 304px) and (max-width: 342px) {
+            top: -46px;
+        }
+        @media screen and (min-width: 343px) {
+            top: -23px;
+        }
+        left: 0;
         width: 16px;
-        height: 15px;
+        height: 16px;
+        margin: 0 0;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
         outline: none;
+        pointer-events: all;
     }
     .checkbox.modal-label {
         display: inline-block;
+        max-width: calc(100% - 28px);
         margin-bottom: 30px;
         margin-left: 8px;
         font-size: 14px;
@@ -161,8 +181,9 @@
     .icon.square {
         width: 16px;
         height: 16px;
-        top: calc((64px + 68px * 2) + 203px);
+        top: 0;
         left: 0;
+        pointer-events: none;
     }
     .square {
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -170,19 +191,17 @@
     }
     .modal-checkbox:checked ~ .square {
         fill: $primary-page-color;
-        background-image: url(../../img/icon-check.svg);
+        background-image: url(../../img/mobile-img/icon-check.svg);
         background-color: $primary-page-color;
 
     }
     .modal-link {
         color: $primary-page-color;
     }
-    .modal-content .button {
+    .modal-content ~ .button {
         display: inline;
         position: relative;
         left: 50%;
         transform: translate(-50%);
-
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }

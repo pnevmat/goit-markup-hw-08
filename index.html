@@ -435,38 +435,46 @@
                         </use>
                     </svg>
                 </button>
-                <form class="modal-content" action="#" method="get">
+                <form action="#" method="get">
                     <h2 class="modal-header">
                         Оставьте свои данные, мы вам перезвоним
                     </h2>
-                    <label class="modal-label" for="name">Имя</label>
-                    <input class="modal-iput" type="text" name="name" id="name">
-                    <svg class="icon name">
-                        <use href="./img/desktop-img/symbol-defs2.svg#person">
-                        </use>
-                    </svg>
-                    <label class="modal-label" for="phone">Телефон</label>
-                    <input class="modal-iput" type="tel" name="phone" id="phone">
-                    <svg class="icon phone">
-                        <use href="./img/desktop-img/symbol-defs2.svg#phone">
-                        </use>
-                    </svg>
-                    <label class="modal-label" for="mail">Почта</label>
-                    <input class="modal-iput" type="email" name="mail" id="mail">
-                    <svg class="icon email">
-                        <use href="./img/desktop-img/symbol-defs2.svg#email">
-                        </use>
-                    </svg>
+                    <div class="modal-content">
+                        <label class="modal-label" for="name">Имя</label>
+                        <input class="modal-iput" type="text" name="name" id="name">
+                        <svg class="icon name">
+                            <use href="./img/desktop-img/symbol-defs2.svg#person">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <label class="modal-label" for="phone">Телефон</label>
+                        <input class="modal-iput" type="tel" name="phone" id="phone">
+                        <svg class="icon phone">
+                            <use href="./img/desktop-img/symbol-defs2.svg#phone">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <label class="modal-label" for="mail">Почта</label>
+                        <input class="modal-iput" type="email" name="mail" id="mail">
+                        <svg class="icon email">
+                            <use href="./img/desktop-img/symbol-defs2.svg#email">
+                            </use>
+                        </svg>
+                    </div>
                     <label class="modal-label" for="comment">Комментарий</label>
                     <textarea class="modal-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
-                    <input class="modal-checkbox" type="checkbox" name="submit-agreement" id="submit-agreement">
-                    <label class="checkbox modal-label" for="submit-agreement">
+                    <div class="modal-content">
+                        <input class="modal-checkbox" type="checkbox" name="submit-agreement" id="submit-agreement">
+                        <label class="checkbox modal-label" for="submit-agreement">
                         Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-link">Условия договора</a>
-                    </label>
-                    <svg class="icon square">
-                        <use href="./img/desktop-img/symbol-defs2.svg#square">
-                        </use>
-                    </svg>
+                        </label>
+                        <svg class="icon square">
+                            <use href="./img/desktop-img/symbol-defs2.svg#square">
+                            </use>
+                        </svg>
+                    </div>
                     <button class="button" type="submit">Отправить</button>
                 </form>
             </div>

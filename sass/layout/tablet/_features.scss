@@ -1,22 +1,21 @@
-@media screen and (min-width: 280px) and (max-width: 480px) {
-    // portfolio page sections
-    .portfolio-section {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    // features section
+    .features-section {
         color: #212121;
         font-weight: 700;
         line-height: 1.14;
     }
-    .portfolio-conteiner {
-        max-width: 480px;
+    .features-conteiner {
+        margin: 0 auto 60px auto;
+        max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto 40px auto;
     }
-    .portfolio-conteiner.customize {
-        margin-bottom: 60px;
-    }
-    .portfolio-header {
+    .features-header {
         margin-bottom: 30px;
 
+        background-color: $secondary-page-color;
+        font-weight: 700;
         font-size: 28px;
         line-height: 1.17;
         text-align: center;

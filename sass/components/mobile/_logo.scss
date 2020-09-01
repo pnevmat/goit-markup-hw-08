@@ -1,6 +1,11 @@
 .logo {
     display: block;
-    margin-right: calc(100% - 204px);
+    @media screen and (min-width: 280px) and (max-width: 480px) {
+        margin-right: calc(100% - 204px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-right: 88px;
+    }
     color: $primary-page-color;
     font-family: Raleway;
     font-weight: 700;
@@ -17,8 +22,8 @@
         display: block;
         text-align: center;
         margin-right: 0;
-        margin-bottom: 20px;
     }
+    margin-bottom: 20px;
     color: $primary-page-color;
     font-family: Raleway;
     font-weight: 700;

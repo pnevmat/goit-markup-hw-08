@@ -1,0 +1,29 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .address {
+        margin-bottom: 60px;
+    }
+}
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.address-link:hover, .address-link:focus {
+    color: $primary-page-color;
+}
+.ul.address {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 165px;
+}
+.ul.follow-us {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}

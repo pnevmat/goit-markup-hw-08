@@ -1,11 +1,20 @@
-@media screen and (min-width: 280px) and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     // features card
-    .ul .items:not(:last-child) {
-        margin-bottom: 30px;
+    .features-ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .features-ul .items {
+        &:nth-child(-n + 2) {
+            margin-bottom: 30px;
+        }
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
     }
     .features-items {
         display: flex;
-        max-width: 450px;
+        max-width: 354px;
         height: 120px;
         align-items: center;
         justify-content: center;
@@ -21,12 +30,13 @@
         fill: #AFB1B8;
     }
     .features {
-        text-align: center;
+        text-align: left;
         text-transform: uppercase;
 
         margin-bottom: 10px;
     }
     .features-text {
+        max-width: 354px;
         text-align: left;
         color: #757575;
         font-weight: 400;

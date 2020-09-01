@@ -1,0 +1,30 @@
+// portfolio card
+@media screen and (min-width: 768px) and (max-width: 768px) {
+    .portfolio.items {
+        max-width: 354px;
+    }
+    .portfolio .items {
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    .photo-size {
+        width: 354px;
+    }
+    .ul.portfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio-header {
+        margin-bottom: 4px;
+        text-align: left;
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2.00;
+        letter-spacing: 0.06em;
+    }
+}

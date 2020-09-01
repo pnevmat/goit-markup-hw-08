@@ -1,4 +1,4 @@
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 768px) {
     // modal window
     .backdrop {
         position: fixed;
@@ -20,20 +20,10 @@
     }
     .modal {
         position: absolute;
-        @media screen and (max-width: 337px) {
-            top: calc(80% + 93px);
-        }
-        @media screen and (min-width: 338px) and (max-width: 767px) {
-            top: calc(60% + 93px);
-        }
+        top: calc(49% + 208px);
         left: 50%;
 
-        @media screen and (min-width: 280px) and (max-width: 480px) {
-            width: calc(100% - 30px);
-        }
-        @media screen and (min-width: 481px) and (max-width: 767px) {
-            width: 450px;
-        }
+        width: 450px;
         height: auto;
         padding: 40px 40px;
         border-radius: 4px;

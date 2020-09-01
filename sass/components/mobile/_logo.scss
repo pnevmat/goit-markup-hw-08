@@ -1,6 +1,6 @@
 .logo {
     display: block;
-    @media screen and (min-width: 280px) and (max-width: 480px) {
+    @media screen and (min-width: 280px) and (max-width: 767px) {
         margin-right: calc(100% - 204px);
     }
     @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -18,7 +18,7 @@
     color: $primary-text-color;
 }
 .footer-logo {
-    @media screen and (min-width: 280px) and (max-width: 480px) {
+    @media screen and (min-width: 280px) and (max-width: 767px) {
         display: block;
         text-align: center;
         margin-right: 0;

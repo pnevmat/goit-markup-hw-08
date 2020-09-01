@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
 ul {
     list-style: none;
 }
-@media screen and (min-width: 280px) and (max-width: 480px) {
+@media screen and (min-width: 280px) and (max-width: 767px) {
     // header
     .header-conteiner {
         position: relative;

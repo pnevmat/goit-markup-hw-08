@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     // regular-customers section
     .customers-section {
         color: #212121;
@@ -6,15 +6,15 @@
         line-height: 1.14;
     }
     .customers-conteiner {
-        max-width: 768px;
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 94px auto;
     }
     .customers-header {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
 
-        font-size: 28px;
+        font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;

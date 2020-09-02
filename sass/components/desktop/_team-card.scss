@@ -1,17 +1,13 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     // team card
     .team-ul {
         display: flex;
-        flex-wrap: wrap;
-        & :nth-child(2n + 1) {
+        & :not(:last-child) {
             margin-right: 30px;
-        }
-        & :nth-child(-n + 2) {
-            margin-bottom: 30px;
         }
     }
     .items-width {
-        max-width: 354px;
+        max-width: 270px;
         padding-bottom: 24px;
         background-color: #ffffff;
 
@@ -21,6 +17,12 @@
     .photo-margin {
         width: 100%;
         margin-bottom: 30px;
+    }
+    .items-width .photo-margin {
+        margin-right: 0;
+    }
+    .items-width .teammate-name {
+        margin-right: 0;
     }
     .team-ul .items .teammate-name {
         margin-bottom: 10px;

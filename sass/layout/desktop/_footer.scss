@@ -1,6 +1,6 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     .footer {
-        max-width: 768px;
+        max-width: 1600px;
         margin-right: auto;
         margin-left: auto;
         color: #ffffff;
@@ -8,9 +8,10 @@
         background-color: #2F303A;
     }
     .footer-conteiner {
-        max-width: 768px;
+        display: flex;
+        max-width: 1600px;
         height: auto;
-        padding: 60px 76px;
+        padding: 60px 215px;
         margin: 0 auto 0 auto;
     }
     .footer-header {

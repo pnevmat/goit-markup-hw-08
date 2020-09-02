@@ -1,7 +1,6 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     .address {
-        margin-bottom: 60px;
-        text-align: center;
+        text-align: left;
 
         font-style: normal;
         font-weight: 400;
@@ -16,14 +15,15 @@
         color: $primary-page-color;
     }
     .ul.address {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-right: 165px;
+        align-items: flex-start;
+        margin-right: 70px;
     }
     .ul.follow-us {
-        display: inline-flex;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        margin-right: 93px;
     }
 }

@@ -1,8 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
-    .absolute.desine-desisions {
-        display: none;
-        visibility: hidden;
-    }
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     // team section
     .team-section {
         color: #212121;
@@ -10,12 +6,12 @@
         line-height: 1.14;
     }
     .team-conteiner {
-        max-width: 768px;
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin: 0 auto 60px auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        margin: 0 auto 94px auto;
 
         background-color: #f4f4f8;
     }
@@ -27,5 +23,10 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: none;
+    }
+    .absolute.desine-desisions {
+        top: 343px;
+        left: 600px;
+        width: auto;
     }
 }

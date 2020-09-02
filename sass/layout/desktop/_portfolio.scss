@@ -1,17 +1,20 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
-    // regular-customers section
-    .customers-section {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+    // portfolio page sections
+    .portfolio-section {
         color: #212121;
         font-weight: 700;
         line-height: 1.14;
     }
-    .customers-conteiner {
-        max-width: 768px;
+    .portfolio-conteiner {
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto 60px auto;
+        margin: 0 auto 34px auto;
     }
-    .customers-header {
+    .portfolio-conteiner.customize {
+        margin-bottom: 94px;
+    }
+    .portfolio-header {
         margin-bottom: 30px;
 
         font-size: 28px;

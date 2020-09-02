@@ -1,16 +1,8 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
     // regular customers logos
     .customers-ul {
         display: flex;
-        flex-wrap: wrap;
-        & :nth-child(-n + 3) {
-            margin-bottom: 30px;
-        }
-        & :nth-child(-n + 2) {
-            margin-right: 30px;
-        }
-        & :nth-child(4),
-        & :nth-child(5) {
+        & :not(:last-child) {
             margin-right: 30px;
         }
     }
@@ -29,8 +21,8 @@
         }
     }
     .clients-items {
-        display: inline-flex;
-        width: 210px;
+        display: flex;
+        max-width: 170px;
         height: 90px;
         align-items: center;
         justify-content: center;

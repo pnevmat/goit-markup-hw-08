@@ -1,22 +1,22 @@
-@media screen and (min-width: 768px) and (max-width: 1499px) {
-    // features section
-    .features-section {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
+    // what we do
+     .we-do-section {
         color: #212121;
         font-weight: 700;
         line-height: 1.14;
     }
-    .features-conteiner {
-        margin: 0 auto 60px auto;
-        max-width: 768px;
+    .we-do-conteiner {
+        margin: 0 auto 94px auto;
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
     }
-    .features-header {
-        margin-bottom: 30px;
+    .we-do-header {
+        margin-bottom: 50px;
 
         background-color: $secondary-page-color;
         font-weight: 700;
-        font-size: 28px;
+        font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;

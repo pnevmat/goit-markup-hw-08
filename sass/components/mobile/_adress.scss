@@ -1,11 +1,11 @@
-@media screen and (min-width: 280px) and (max-width: 767px) {
-    .address {
+.address {
+    @media screen and (min-width: 280px) and (max-width: 1499px) {
         margin-bottom: 60px;
-
         text-align: center;
     }
-}
-.address {
+    @media screen and (min-width: 1500px) and (max-width: 1600px) {
+        text-align: left;
+    }
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -17,4 +17,43 @@
 }
 .address-link:hover, .address-link:focus {
     color: $primary-page-color;
+}
+@media screen and (min-width: 768px) {
+    .ul.address {
+        @media screen and (max-width: 1499px) {
+            display: inline-flex;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            display: flex;
+        }
+        flex-direction: column;
+        @media screen and (max-width: 1499px) {
+            align-items: center;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            align-items: flex-start;
+        }
+        @media screen and (max-width: 1499px) {
+            margin-right: 165px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            margin-right: 70px;
+        }
+    }
+    .ul.follow-us {
+        @media screen and (max-width: 1499px) {
+            display: inline-flex;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            display: flex;
+        }
+        flex-direction: column;
+        @media screen and (max-width: 1499px) {
+            align-items: center;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            align-items: flex-start;
+            margin-right: 93px;
+        }
+    }
 }

@@ -1,0 +1,83 @@
+@media screen and (min-width: 280px) {
+    // main
+    .main {
+        text-align: center;
+    }
+    // hero
+    .hero-conteiner {
+        @media screen and (max-width: 767px) {
+            max-width: 480px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            max-width: 768px;
+        }
+        @media screen and (max-width: 1499px) {
+            height: 400px;
+            margin: 0 auto 60px auto;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            max-width: 1600px;
+            height: 600px;
+            margin: 0 auto 94px auto;
+        }
+        background-color: rgba(47, 48, 58, 0.8);
+        @media screen and (max-width: 767px) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url("../../../img/mobile-img/header-mobile.jpg");
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url("../../../img/tablet/header-tablet.jpg");
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            background-image: linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.8),
+                rgba(47, 48, 58, 0.8)),
+                url("../../../img/desktop-img/header-img.jpg");
+        }
+
+    }
+    .header {
+        @media screen and (max-width: 1499px) {
+            max-width: 360px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            max-width: 696px;
+        }
+        color: $secondary-text-color;
+        font-weight: 900;
+        @media screen and (max-width: 1499px) {
+            font-size: 26px;
+            line-height: 1.6;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+    .relative {
+        position: relative;
+    }
+    .absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-50%, -50%);
+    }
+    .absolute .header {
+        margin-bottom: 30px;
+    }
+}

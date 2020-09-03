@@ -1,25 +1,44 @@
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 280px) {
     // regular customers logos
-    @media screen and (max-width: 449px) {
         .customers-ul {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            & :not(:last-child) {
-                margin-bottom: 30px;
+            @media screen and (max-width: 449px) {
+                justify-content: center;
+            }
+            @media screen and (min-width: 450px) and (max-width: 767px) {
+                justify-content: space-between;
+            }
+            @media screen and (max-width: 1499px) {
+                flex-wrap: wrap;
+            }
+            @media screen and (max-width: 449px) {
+                & :not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (min-width: 450px) and (max-width: 767px) {
+                & :not(:nth-last-child(-n + 2)) {
+                    margin-bottom: 30px;
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1499px) {
+                & :nth-child(-n + 3) {
+                    margin-bottom: 30px;
+                }
+                & :nth-child(-n + 2) {
+                    margin-right: 30px;
+                }
+                & :nth-child(4),
+                & :nth-child(5) {
+                    margin-right: 30px;
+                }
+            }
+            @media screen and (min-width: 1500px) and (max-width: 1600px) {
+                & :not(:last-child) {
+                    margin-right: 30px;
+                }
             }
         }
-    }
-    @media screen and (min-width: 450px) {
-        .customers-ul {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            & :not(:nth-last-child(-n + 2)) {
-                margin-bottom: 30px;
-            }
-        }
-    }
     .customers-link {
         color: #AFB1B8;
         text-decoration: none;
@@ -29,9 +48,22 @@
             fill: $primary-page-color;
         }
     }
+    @media screen and (min-width: 768px) and (max-width: 1600px) {
+        .customers-items {
+            display: block;
+            width: 208px;
+            height: 88px;
+        }
+    }
     .clients-items {
-        display: inline-flex;
-        width: 210px;
+        @media screen and (max-width: 1499px) {
+            display: inline-flex;
+            width: 210px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            display: flex;
+            max-width: 170px;
+        }
         height: 90px;
         align-items: center;
         justify-content: center;
@@ -82,3 +114,4 @@
         height: 45px;
     }
 }
+    

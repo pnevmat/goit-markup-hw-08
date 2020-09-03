@@ -1,11 +1,44 @@
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 280px) {
     // features card
-    .ul .items:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        .ul .items:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        .features-ul {
+            display: flex;
+            @media screen and (max-width: 1499px) {
+                flex-wrap: wrap;
+            }
+        }
+        .features-ul .items {
+            @media screen and (max-width: 1499px) {
+                &:nth-child(-n + 2) {
+                    margin-bottom: 30px;
+                }
+                &:nth-child(2n + 1) {
+                    margin-right: 30px;
+                }
+            }
+            @media screen and (min-width: 1500px) and (max-width: 1600px) {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
     }
     .features-items {
         display: flex;
-        max-width: 450px;
+        @media screen and (max-width: 767px) {
+            max-width: 450px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            max-width: 354px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            max-width: 270px;
+        }
         height: 120px;
         align-items: center;
         justify-content: center;
@@ -21,12 +54,23 @@
         fill: #AFB1B8;
     }
     .features {
-        text-align: center;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            text-align: left;
+        }
         text-transform: uppercase;
 
         margin-bottom: 10px;
     }
     .features-text {
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            max-width: 354px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            max-width: 270px;
+        }
         text-align: left;
         color: #757575;
         font-weight: 400;

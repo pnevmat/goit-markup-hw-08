@@ -1,0 +1,47 @@
+@media screen and (min-width: 280px) {
+    // portfolio page sections
+    .portfolio-section {
+        color: #212121;
+        font-weight: 700;
+        line-height: 1.14;
+    }
+    .portfolio-conteiner {
+        @media screen and (max-width: 767px) {
+            max-width: 480px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            max-width: 768px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            max-width: 1200px;
+        }
+        padding-left: 15px;
+        padding-right: 15px;
+        @media screen and (max-width: 1499px) {
+            margin: 0 auto 40px auto;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            margin: 0 auto 34px auto;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            margin-bottom: 94px;
+        }
+    }
+    .portfolio-conteiner.customize {
+        @media screen and (max-width: 1499px) {
+            margin-bottom: 60px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            margin-bottom: 94px;
+        }
+    }
+    .portfolio-header {
+        margin-bottom: 30px;
+
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: none;
+    }
+}

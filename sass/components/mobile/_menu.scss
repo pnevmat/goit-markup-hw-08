@@ -1,56 +1,91 @@
-@media screen and (min-width: 280px) and (max-width: 767px) {
-    // menu styles
-    .icon-menu {
-        max-width: 24px;
-        max-height: 16px;
-
-        fill: #000000;
+// menu styles
+@media screen and (min-width: 280px) {
+    @media screen and (max-width: 767px) {
+        .icon-menu {
+            max-width: 24px;
+            max-height: 16px;
+    
+            fill: #000000;
+        }
+        .cross-icon {
+            width: 19px;
+            height: 19px;
+        }
+        .menu-button .icon-menu {
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .menu-button:hover .icon-menu,
+        .menu-button:focus .icon-menu {
+            fill: $primary-page-color;
+        }
+        .menu-button .cross-icon {
+            display: none;
+        }
+        .menu-button.is-open .cross-icon {
+            display: block;
+        }
+        .menu-button.is-open .menu-icon {
+            display: none;
+        }
     }
-    .cross-icon {
-        width: 19px;
-        height: 19px;
-    }
-    .menu-button .icon-menu {
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .menu-button:hover .icon-menu,
-    .menu-button:focus .icon-menu {
-        fill: $primary-page-color;
-    }
-    .menu-button .cross-icon {
-        display: none;
-    }
-    .menu-button.is-open .cross-icon {
-        display: block;
-    }
-    .menu-button.is-open .menu-icon {
-        display: none;
+    @media screen and (min-width: 768px) {
+        .icon-menu,
+        .menu-icon,
+        .cross-icon,
+        .menu-button {
+            position: absolute;
+            display: none;
+            pointer-events: none;
+        }
     }
     // modal window for menu
     .menu-modal {
-        position: absolute;
-        top: 394%;
-        left: 50%;
+        @media screen and (max-width: 767px) {
+            position: absolute;
+            top: 394%;
+            left: 50%;
     
-        width: 100%;
-        padding: 60px 0;
-        border-radius: 0;
-        background-color: $secondary-page-color;
+            width: 100%;
+            padding: 60px 0;
+            border-radius: 0;
+            background-color: $secondary-page-color;
         
-        z-index: 2;
-        opacity: 0;
-        pointer-events: none;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-        transform: translate(-50%, -50%) scale(1);
+            z-index: 2;
+            opacity: 0;
+            pointer-events: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            transform: translate(-50%, -50%) scale(1);
+        }
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            background-color: $secondary-page-color;
+        }
     }
-    .menu-modal.is-open {
-        opacity: 1;
-        pointer-events: all;
+    @media screen and (max-width: 767px) {
+        .menu-modal.is-open {
+            opacity: 1;
+            pointer-events: all;
+        }
     }
     .contact .icon {
-        width: 16px;
-        height: 11px;
-        margin-right: 10px;
+        @media screen and (max-width: 767px) {
+            width: 16px;
+            height: 11px;
+            margin-right: 10px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            width: 14px;
+            height: 10px;
+            margin-right: 8px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            width: 16px;
+            height: 12px;
+            margin-right: 10px;
+        }
     
         fill: #AFB1B8;
     
@@ -58,10 +93,29 @@
     }
     .header-phone.icon {
         width: 10px;
-        height: 15px;
+        @media screen and (max-width: 767px) {
+            height: 15px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            height: 14px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            height: 16px;
+        }
     }
     .nav {
-        margin-bottom: 60px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            margin-right: 84px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1599px) {
+            margin-right: 205px;
+        }
+        @media screen and (min-width: 1600px){
+            margin-right: 305px;
+        }
     }
     .nav, .nav-link {
         color: $primary-text-color;
@@ -75,7 +129,12 @@
     .nav-link.contact {
         display: flex;
         align-items: center;
+
         color: #757575;
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            font-size: 12px;
+            line-height: 1.17;
+        }
     }
     .item {
         position: relative;
@@ -89,20 +148,52 @@
     }
     .nav-ul {
         display: flex;
-        flex-direction: column;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
         align-items: center;
-        justify-content: center;
-        & :not(:last-child) {
-            margin-bottom: 40px;
+        @media screen and (max-width: 767px) {
+            justify-content: center;
+            & :not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            & :not(:last-child) {
+                margin-right: 50px;
+            }
         }
     }
     .contact-ul {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        @media screen and (max-width: 1499px) {
+            flex-direction: column;
+        }
+        @media screen and (max-width: 767px) {
+            align-items: center;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            align-items: flex-start;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            align-items: flex-end;
+            align-items: center;
+        }
         justify-content: center;
-        & :not(:last-child) {
-            margin-bottom: 16px;
+        @media screen and (max-width: 767px) {
+            & :not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            & :not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            & :not(:last-child) {
+                margin-right: 30px;
+            }
         }
     }
     .nav-link.current {
@@ -111,7 +202,12 @@
     .decor {
         &::before {
             position: absolute;
-            top: 19px;
+            @media screen and (max-width: 767px) {
+                top: 19px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1600px) {
+                top: calc(100% + 28px);
+            }
             left: 2px;
             content: '';
             width: calc(100% - 4px);

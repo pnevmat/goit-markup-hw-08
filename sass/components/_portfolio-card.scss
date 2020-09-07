@@ -1,7 +1,25 @@
 // portfolio card
-@media screen and (min-width: 280px) and (max-width: 767px) {
-    .portfolio .items:not(:last-child) {
-        margin-bottom: 30px;
+.portfolio .items {
+    @media screen and (min-width: 280px) and (max-width: 1600px) {
+        & :not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1499px) {
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1600px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:nth-last-child(-n + 3) {
+            margin-bottom: 0;
+        }
     }
 }
 .portfolio.items {
@@ -9,13 +27,35 @@
     @media screen and (min-width: 280px) and (max-width: 767px) {
         max-width: 450px;
     }
+    @media screen and (min-width: 768px) and (max-width: 1499px) {
+        max-width: 354px;
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1600px) {
+        max-width: 370px;
+    }
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
-    .photo-size {
+.photo-size {
+    @media screen and (min-width: 280px) and (max-width: 767px) {
         width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1499px) {
+        width: 354px;
+    }
+    @media screen and (min-width: 1500px) and (max-width: 1600px) {
+        width: 370px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .ul.portfolio {
+        display: flex;
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            align-items: center;
+            justify-content: center;
+        }
+        flex-wrap: wrap;
     }
 }
 .portfolio-link {
@@ -43,7 +83,7 @@
     padding: 20px 24px;
     text-align: left;
 }
-@media screen and (min-width: 280px) and (max-width: 767px) {
+@media screen and (min-width: 280px) and (max-width: 1600px) {
     .portfolio-header {
         margin-bottom: 4px;
         text-align: left;

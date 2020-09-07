@@ -2,7 +2,7 @@
     // regular customers logos
         .customers-ul {
             display: flex;
-            @media screen and (max-width: 449px) {
+            @media screen and (max-width: 1499px) {
                 justify-content: center;
             }
             @media screen and (min-width: 450px) and (max-width: 767px) {
@@ -40,6 +40,8 @@
             }
         }
     .customers-link {
+        display: block;
+        height: 90px;
         color: #AFB1B8;
         text-decoration: none;
         &:hover .icon,
@@ -48,17 +50,27 @@
             fill: $primary-page-color;
         }
     }
+    .customers-items .customers-link,
+    .customers-link .clients-items {
+        margin: 0 0;
+    }
     @media screen and (min-width: 768px) and (max-width: 1600px) {
         .customers-items {
             display: block;
             width: 208px;
-            height: 88px;
+            height: 90px;
         }
     }
     .clients-items {
         @media screen and (max-width: 1499px) {
             display: inline-flex;
+        }
+        @media screen and (max-width: 767px) {
             width: 210px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            max-width: 226px;
+            width: 100%;
         }
         @media screen and (min-width: 1500px) and (max-width: 1600px) {
             display: flex;
@@ -72,19 +84,21 @@
 
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .clients-items .icon {
-        width: 44px;
-        height: 49px;
-        margin-bottom: 0;
-
-        fill: #AFB1B8;
-    
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .clients-items {
         &:hover,
         &:focus {
             fill: $primary-page-color;
             border-color: $primary-page-color;
         }
+    }
+    .clients-items .icon {
+        width: 44px;
+        height: 49px;
+        margin: 0;
+
+        fill: #AFB1B8;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .clients-link {
         &:hover,

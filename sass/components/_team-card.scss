@@ -1,21 +1,26 @@
 @media screen and (min-width: 280px) {
     // team card
-    @media screen and (min-width: 768px) {
-        .team-ul {
-            display: flex;
-            @media screen and (max-width: 1499px) {
-                flex-wrap: wrap;
-                & :nth-child(2n + 1) {
-                    margin-right: 30px;
-                }
-                & :nth-child(-n + 2) {
-                    margin-bottom: 30px;
-                }
+    .team-ul {
+        @media screen and (max-width: 767px) {
+            & :not(:last-child) {
+                margin-bottom: 30px;
             }
-            @media screen and (min-width: 1500px) and (max-width: 1600px) {
-                & :not(:last-child) {
-                    margin-right: 30px;
-                }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            display: flex;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
+            flex-wrap: wrap;
+            & :nth-child(2n + 1) {
+                margin-right: 30px;
+            }
+            & :nth-child(-n + 2) {
+                margin-bottom: 30px;
+            }
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            & :not(:last-child) {
+                margin-right: 30px;
             }
         }
     }
@@ -39,7 +44,7 @@
         width: 100%;
         margin-bottom: 30px;
     }
-    @media screen and (min-width: 1500px) and (max-width: 1600px) {
+    @media screen and (min-width: 481px) and (max-width: 1600px) {
         .items-width .photo-margin {
             margin-right: 0;
         }
@@ -47,7 +52,7 @@
             margin-right: 0;
         }
     }
-    .team-ul .items .teammate-name {
+    .items .teammate-name {
         margin-bottom: 10px;
 
         font-weight: 500;
@@ -55,15 +60,11 @@
         line-height: 1.19;
     }
     .teammate-name.section-text {
+        margin-right: 0;
         margin-bottom: 16px;
 
         text-align: center;
         font-weight: 400;
         color: #757575;
-    }
-    @media screen and (max-width: 1499px) {
-        .team-ul :not(:last-child) {
-            margin-bottom: 30px;
-        }
     }
 }

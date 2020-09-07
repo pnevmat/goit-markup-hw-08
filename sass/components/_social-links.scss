@@ -33,8 +33,15 @@
             fill: $secondary-page-color;
         }
     }
+    .team-item .social-link,
+    .social-link .icon {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
     .features.ul {
         margin-bottom: 20px;
+
+        font-size: 14px;
     }
     .follow-us-ul {
         display: flex;

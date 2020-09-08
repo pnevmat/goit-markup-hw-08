@@ -1936,6 +1936,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 280px) and (min-width: 1500px) and (max-width: 1600px) {
+  .modal-header {
+    line-height: 1.15;
+  }
+}
+
 @media screen and (min-width: 280px) {
   .modal-label {
     display: block;
@@ -2078,6 +2084,13 @@ ul {
   .checkbox.modal-label {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 280px) and (min-width: 1500px) and (max-width: 1600px) {
+  .checkbox.modal-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

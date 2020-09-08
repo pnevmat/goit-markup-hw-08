@@ -94,6 +94,9 @@
         @media screen and (max-width: 1499px) {
             line-height: 1.5;
         }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            line-height: 1.15;
+        }
         text-align: center;
     }
     .modal-label {
@@ -199,6 +202,10 @@
         @media screen and (max-width: 767px) {
             font-size: 12px;
             line-height: 1.17;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            font-size: 14px;
+            line-height: 1.71;
         }
         letter-spacing: 0.03em;
     }

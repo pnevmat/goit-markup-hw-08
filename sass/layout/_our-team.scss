@@ -35,7 +35,12 @@
     .team-header {
         margin-bottom: 30px;
 
-        font-size: 28px;
+        @media screen and (max-width: 1499px) {
+            font-size: 28px;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            font-size: 36px;
+        }
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;

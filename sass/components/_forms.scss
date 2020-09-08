@@ -2,7 +2,12 @@
     .ul.subscribe {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        @media screen and (max-width: 1499px) {
+            align-items: center;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            align-items: flex-start;
+        }
         justify-content: center;
         & :not(:last-child) {
             margin-bottom: 20px;

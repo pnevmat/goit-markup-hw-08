@@ -42,7 +42,7 @@
     .menu-modal {
         @media screen and (max-width: 767px) {
             position: absolute;
-            top: 394%;
+            top: 417%;
             left: 50%;
     
             width: 100%;
@@ -111,16 +111,23 @@
             margin-right: 84px;
         }
         @media screen and (min-width: 1500px) and (max-width: 1599px) {
-            margin-right: 243px;
+            margin-right: 206px;
         }
         @media screen and (min-width: 1600px){
-            margin-right: 305px;
+            margin-right: 289px;
         }
     }
     .nav, .nav-link {
         color: $primary-text-color;
         font-weight: 500;
-        line-height: 1.14;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 1.17;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1600px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
         letter-spacing: 0.02em;
         text-decoration: none;
     
@@ -131,9 +138,13 @@
         align-items: center;
 
         color: #757575;
-        @media screen and (min-width: 768px) and (max-width: 1600px) {
+        @media screen and (min-width: 768px) and (max-width: 1499px) {
             font-size: 12px;
             line-height: 1.17;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px) {
+            font-size: 14px;
+            line-height: 1.14;
         }
     }
     .item {

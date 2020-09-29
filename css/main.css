@@ -2478,10 +2478,6 @@ ul {
           transform: translateY(0);
 }
 
-.portfolio.items.chosen-three {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1499px) {
   .portfolio.items.chosen-three:nth-child(2) {
     margin-right: 30px;
@@ -2509,6 +2505,28 @@ ul {
   .portfolio.items.chosen-three:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio.items.chosen-three {
+    margin-bottom: 0;
+  }
+}
+
+.portfolio.items.chosen-more-three {
+  margin-bottom: 30px;
+}
+
+.portfolio.items.chosen-more-three:nth-child(3) {
+  margin-right: 30px;
+}
+
+.portfolio.items.chosen-more-three:nth-last-child(9) {
+  margin-bottom: 30px;
+}
+
+.portfolio.items.chosen-more-three:nth-last-child(10) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1600px) {

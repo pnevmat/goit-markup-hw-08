@@ -19,6 +19,7 @@ function onWebSitesButtonClick() {
     allCardsRef.forEach((element, i) => {
         if (element.attributes[1].name !== 'web-site') {
             allCardsRef[i].classList.add('portfolio-items-hidden');
+            allCardsRef[i].classList.remove('chosen-three');
         } else {
             allCardsRef[i].classList.remove('portfolio-items-hidden');
         }
@@ -30,6 +31,7 @@ function onAppsButtonClick() {
             allCardsRef[i].classList.add('portfolio-items-hidden');
         } else {
             allCardsRef[i].classList.remove('portfolio-items-hidden');
+            allCardsRef[i].classList.add('chosen-three');
         }
     });
 };
@@ -37,8 +39,10 @@ function onDesignButtonClick() {
     allCardsRef.forEach((element, i) => {
         if (element.attributes[1].name !== 'design') {
             allCardsRef[i].classList.add('portfolio-items-hidden');
+            allCardsRef[i].classList.remove('chosen-three');
         } else {
             allCardsRef[i].classList.remove('portfolio-items-hidden');
+            allCardsRef[i].classList.add('chosen-three');
         }
     });
 };
@@ -46,13 +50,16 @@ function onMarketingButtonClick() {
     allCardsRef.forEach((element, i) => {
         if (element.attributes[1].name !== 'marketing') {
             allCardsRef[i].classList.add('portfolio-items-hidden');
+            allCardsRef[i].classList.remove('chosen-three');
         } else {
             allCardsRef[i].classList.remove('portfolio-items-hidden');
+            allCardsRef[i].classList.add('chosen-three');
         }
     });
 };
 function onAllButtonClick() {
     allCardsRef.forEach((element, i) => {
         allCardsRef[i].classList.remove('portfolio-items-hidden');
+        allCardsRef[i].classList.remove('chosen-three');
     });
 };
